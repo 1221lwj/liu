@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>订单页面</title>
+		<link rel="stylesheet" type="text/css" href="css/dingdan.css"/>
+		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>  		
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src='js/dingdan.js'></script>
+	</head>
+	<body>
+		<div class="header">
+			<img src="images/1_03.png" alt='logo' title='中国铁路12306' width='200' height='50' >
+			<div class="right">
+				<div class="sousuo">
+					<input type="text" placeholder="搜索车票/餐饮/常旅客/相关规章" />
+					<button type="submit"></button>
+				</div><!--/sousuo-->
+				<div class="header_right">
+					<a href="#">我的12306
+						<!-- <ul class='a_ul'>
+							<li><a href='#'>火车票订单</a></li>
+							<li><a href='#'>候补订单</a></li>
+							<li><a href='#'>我的行程</a></li>
+							<li><a href='#'>我的餐饮.特产</a></li>
+							<li><a href='#'>我的保险</a></li>
+							<li><a href='#'>我的会员</a></li>
+							<li><a href='#'>查看个人信息</a></li>
+							<li><a href='#'>账户安全</a></li>
+							<li><a href='#'>常用联系人</a></li>
+							<li><a href='#'>车票快递地址</a></li>
+							<li><a href='#'>温馨服务查询</a></li>
+						</ul> -->
+					</a>
+					<a href="#">登录</a>
+					<a href="#">注册</a>
+				</div><!--header_right-->
+			</div><!--/right-->
+		</div><!--/header-->
+		<div class="nav">
+			<ul class='nav_ul'>
+				<li class='nav_li'><a href='index.html'>首页</a></li>
+				<li class='li2'><a href='#'>车票<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>团购服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>会员服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>站车服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>商旅服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>出行指南<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>信息查询<img src="images/xia_03.png" ></a></li>
+			</ul>
+		</div><!--/nav-->
+		<div class="div_nav">
+			<div class="nav_erzong">
+				<div class="nav_er">
+					<ul class='nav_er_ul'>
+						<li class='nav_er_li'><a href='#' style='color:#3A99FD'>购买</a></li>
+						<li class='nav_er_li'><a href='chepiao.html'>单程</a></li>
+						<li class='nav_er_li'><a href='#'>接续换乘</a></li>
+					</ul>
+					<div class="pp">
+						<p style='height:60px'><a href='#'>往返</a></p>
+					</div><!--/pp-->
+				</div><!--/nav_er-->
+				<div class="nav_er">
+					<ul class='nav_er_ul'>
+						<li class='nav_er_li'><a href='#' style='color:#3A99FD'>变更</a></li>
+						<li class='nav_er_li'><a href='#'>单程</a></li>
+						<li class='nav_er_li'><a href='#'>接续换乘</a></li>
+					</ul>
+					<div class="pp">
+						<p style='height:60px'><a href='#'>改签</a></p>
+					</div><!--/pp-->
+				</div><!--/nav_er-->
+				<div class="nav_er">
+					<ul class='nav_er_ul'>
+						<li class='nav_er_li'><a href='#' style='color:#3A99FD'>更多</a></li>
+						<li class='nav_er_li'><a href='#'>中铁银通车</a></li>
+						<li class='nav_er_li'><a href='#'>市郊快速铁路</a></li>
+					</ul>
+					<div class="pp">
+						<p><a href='#'>广九直通车</a></p>
+						<p><a href='#'>国际列车</a></p>
+					</div><!--/pp-->
+				</div><!--/nav_er-->
+			</div><!--/nav_erzong-->
+		</div><!--/div_nav-->
+		<div class="order">
+			<p>席位已锁定，请在<span>30</span>分钟内进行支付，完成网上购票。支付剩余时间:<span>28分54秒</span></p>
+			<div class="order_info">
+				<p class='order_info_p'>订单信息</p>
+				<p class='buy_info_p'>2019-05-08（周三）G108<i>次</i>泰山<i>站</i>（00:10开）—烟台<i>站（7:40到）</i></p>
+				<ul class='order_info_ul'>
+					<li><span>序号</span><span>1</span></li>
+					<li><span>姓名</span><span>刘雯静</span></li>
+					<li><span>证件类型</span><span>中国居民身份证</span></li>
+					<li><span>证件号码</span><span>37132420000114526X</span></li>
+					<li><span>票种</span><span>成人票</span></li>
+					<li><span>席别</span><span>二等座</span></li>
+					<li><span>车厢</span><span>03</span></li>
+					<li><span>席位号</span><span>06A</span></li>
+					<li><span>票价</span><span>508.5元</span></li>
+				</ul>
+				<p class='allPrice'>总票价：<span>508.5元</span></p>
+			</div><!--/order_info-->
+		</div><!--/order-->
+		<div class="order_footer">
+			<a href="#" class='quxiao'>取消订单</a>
+			<button type="submit"><a href='#'>网上支付</a></button>
+		</div><!--/order_footer-->
+		<div class="order_quxiao">
+			<div class="order_quxiao_header">
+				<p>交易提示</p>
+				<p class='cha'>X</p>
+			</div><!--/order_quxiao_header-->
+			<div class="order_quxiao_contents">
+				<p>您确认取消订单吗</p>
+				<p>一天内三次申请车票后取消订单,当日将不能网站购票!</p>
+			</div><!--/order_quxiao_contents-->
+			<div class="order_quxiao_footer">
+				<a href="#" class='quxiao2'>取消</a>
+				<button type="submit"><a href='chepiao.html' class='require'>确认</a></button>
+			</div><!--/order_footer-->
+		</div><!--/order_quxiao-->
+	</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			li{list-style: none;}
+			a{text-decoration: none;}
+			body{padding-top:20px;}
+			.header img{display:inline-block;}
+			.header{display:flex;margin-left:8%;}
+			.right{display:flex;margin-left:100px;background: url(../images/bg.png) no-repeat; width:875px;height:35px;padding:5px 0px 0px 100px;}
+			.sousuo{display:flex}
+			.sousuo input {text-indent:0.5em;width:420px;height:28px;border:1px solid #DEDEDE;font-size:12px;}
+			.sousuo button{width:30px;height:30px;border:0;background:url(../images/2_03.png) center no-repeat #3B99FC;}
+			.header_right{margin-left:75px;display:inline-block;line-height: 30px;}
+			.header_right a:nth-child(1){color:#3B99FB;font-size:12px;background:url(../images/b_03.png)  right no-repeat;width:85px;text-align: left;}
+			.header_right a{color:#333333;font-size: 14px;display: inline-block;}
+			.nav{height:40px;background-color:#3B99FC;}
+			.nav a {color:#FFF;}
+			.nav_ul{display:flex;margin:0 auto;width:1155px;line-height: 40px;}
+			.nav_li{width:145px;font-size:14px;text-align: center;}
+			.nav_li:hover{background-color:#2676E3;}
+			.li2{width:145px;margin-left:30px;text-align: center;}
+			.li2:hover{background-color:#2676E3;}
+			.nav li:nth-child(1){background-color:#2676E3;background-image: none !important;}
+			.nav img {display:inline-block;padding-left:15px;}
+			.nav img:hover{transform: rotate(180deg);transition-duration: 1s;}
+			.div_nav{display:none;width:82%;position:absolute;z-index:20;margin-left:7%;}
+			.nav_erzong{background-color:#fff;display:flex;border:1px solid #ADD1F9;padding: 15px 95px 15px 0px;}
+			.nav_er{display:flex;height:115px;line-height: 40px;width:375px;}
+			.nav_er ul{padding:0px 100px 0px 30px;border-left:1px solid #ADD1F9;}
+			.nav_erzong ul:nth-child(1){border:0 !important}
+			.nav_er a{color:#666666;font-size:14px;}
+			.pp p:nth-child(1){border-left:1px solid #ADD1F9;padding-left:30px;}
+			.pp p:nth-child(2){border-left:1px solid #ADD1F9;padding-left:30px;}
+			.pp {color:#666666;height:35px;line-height: 30px;padding-top:40px;}
+			.swiper-container img{width:100%;height:450px;}
+			.fixed{display:flex;width:510px;background-color:#fff;position:relative;top:-400px;left:40px;z-index:10}
+			.fixed_left{width:98px;border-left:4px solid #3B99FC;}
+			.fixed_left p{color:#FFFFFF;line-height: 115px;border-bottom:1px solid #86BFFB;text-align: center;}
+			.fixed_left p:nth-child(1){background:url(../images/1_23.png) 10px no-repeat;background-size:20px 20px;color:#333;background-color:#fff;cursor: pointer;}
+			.fixed_left p:nth-child(2){background:url(../images/a_03.png) 10px no-repeat;background-size:20px 20px;text-indent: 2em;background-color:#3B99FC;cursor: pointer;}
+			.fixed_left p:nth-child(3){background:url(../images/a_06.png) 10px no-repeat;background-size:20px 20px;background-color:#3B99FC;cursor: pointer;}
+			.fixed_right{padding: 40px 0px 0px 25px;}
+			nav{display:none}
+			.r_ul {width:360px;display:flex;}
+			.r_ul li{width:25%;border-bottom:3px solid #DEDEDE;padding:0px 0px 10px 25px;color:#999;font-size:14px;cursor: pointer;}
+			.r_ul li:nth-child(1){background:url(../images/1_14.png) 8px 2px no-repeat;color:#74A6FD;}
+			.r_ul li:nth-child(2){background:url(../images/1_16.png)8px 2px no-repeat;}
+			.r_ul li:nth-child(3){background:url(../images/1_18.png)8px 2px no-repeat;}
+			.r_ul li:nth-child(4){background:url(../images/1_20.png)8px 2px no-repeat;}
+			.r_contents {display:none;padding-top:25px;color:#333;font-size: 14px;}
+			.input_bg{background:url(../images/1_34.png) right center no-repeat;}
+			.input2{padding:15px 0px 15px 0px;padding-left:20px;}
+			.input1{padding-left:20px;}
+			.input1 input{width:263px;height:28px;}
+			.input2 input{width:263px;height:28px;}
+			.input3 input {width:263px;height:28px;}
+			.input3{padding-left:6px;}
+			.input3 input::-webkit-inner-spin-button {visibility:hidden;}
+			.input4 {padding:10px 0px 0px 65px}
+			.lab{display:inline-block;padding-left:60px}
+			.sub{display:inline-block;width:360px;height:30px;background-color:#FF8201;color:#fff;border:0;border-radius:5px;margin-top:15px;}
+			.fan input {width:263px;height:28px;}
+			.fan{padding:15px 0px 0px 6px;}
+			.fan input::-webkit-inner-spin-button {visibility:hidden;}
+			.nav2{}
+			.nav2>ul{display:flex;width:360px;}
+			.nav2>ul>li{width:80%;border-bottom:3px solid #DEDEDE;padding:0px 0px 10px 25px;color:#999;font-size:14px;cursor: pointer;}
+			.nav2>ul>li:nth-child(1){background:url(../images/1_14.png) 8px 2px no-repeat;color:#74A6FD;}
+			.nav2>ul>li:nth-child(2){background:url(../images/1_16.png)8px 2px no-repeat;}
+			.nav2>ul>li:nth-child(3){background:url(../images/1_18.png)8px 2px no-repeat;}
+			.nav2>ul>li:nth-child(4){background:url(../images/1_20.png)8px 2px no-repeat;}
+			.r_contents2{display:none;padding-top:25px;height:250px;color:#333;font-size: 14px;}
+			.r_contents3{display:none;padding-top:25px;height:250px;color:#333;font-size: 14px;}
+			.r_contents4{display:none;padding-top:25px;height:250px;color:#333;font-size: 14px;}
+			.r_contents4 .input3{margin-top:15px;}
+			.c_contents1{display:none;padding-top:25px;height:250px;color:#333;font-size: 14px;} 
+			.c_contents1 .input1{padding-top:15px;}
+			.c_contents2{/* display:none; */padding-top:25px;height:250px;color:#333;font-size: 14px;}
+			.c_contents2 .input4{padding-left:35px;}
+			 .input4_s input {width:263px;height:28px;display:inline-block}
+			.c_contents3{display:none;padding-top:25px;height:250px;color:#333;font-size: 14px;}
+			.c_contents4{display:none}
+			.r_ul2{display:none}
+			.input_bg{background:url(../images/1_34.png) right center no-repeat;}
+			.input2{padding:15px 0px 15px 0px;padding-left:20px;}
+			.input1_1{padding-left:20px;}
+			.input1_1 input{width:263px;height:28px;}
+			.input2_1{padding-left:20px;margin-top:10px}
+			.input2_1 input{width:263px;height:28px;}
+			.input3_1 input {width:263px;height:28px;}
+			.input3_1{padding-left:6px;}
+			.input3_1 input::-webkit-inner-spin-button {visibility:hidden;}
+			.input4_1 {padding:10px 0px 0px 35px}
+			.input4_1 input{width:263px;height:28px;}
+		</style>
+	</head>
+	<body>
+		<div class="c_right">
+			<div class="nav2">
+				<ul>
+					<li>正晚点</li>
+					<li>检票口</li>
+					<li>起售时间</li>
+					<li>天气查询</li>
+				</ul><!--/r_ul2-->
+			</div><!--/nav2-->
+			
+			<div class="c_contents1">
+					<label>查询类型</label>
+					<input name="radio" type="radio" />
+					<label>到达站</label>
+					<input name="radio" type="radio" />
+					<label>出发站</label>
+					<div class="input1_1">
+						<label for="text">出发地</label>
+						<input type="text"id="text" placeholder="简拼/全拼/汉字" />
+					</div><!--/input1-->
+					<div class="input2_1">
+						<label for="text">到达地</label>
+						<input type="text"id="text" placeholder="简拼/全拼/汉字" />
+					</div><!--/input2-->
+					<input class='sub' type="submit" value="查询" />
+			</div><!--/c_contents1-->
+			<div class="c_contents2">
+				<div class="input3_1">
+					<label for="date">乘车日期</label>
+					<input type="date" id="date" />
+				</div><!--/input3-->
+				<div class="input4_1">
+					<label for="date">车次</label>
+					<input type="text" id="text" placeholder="请输入车次" />
+				</div><!--/input4_1-->
+				<div class="input2_1">
+					<label for="text">关键字</label>
+					<input type="text"id="text" placeholder="简拼/全拼/汉字" />
+				</div><!--/input2-->
+				<input class='sub' type="submit" value="查询" />
+			</div><!--/c_contents2-->
+			<div class="c_contents3">
+				<div class="input2_1">
+					<label for="text">关键字</label>
+					<input type="text"id="text" placeholder="简拼/全拼/汉字" />
+				</div><!--/input2-->
+				<input class='sub' type="submit" value="查询" />
+			</div><!--/c_contents3-->
+			<div class="c_contents4">
+				<div class="input2_1">
+					<label for="text">目的地</label>
+					<input type="text"id="text" placeholder="简拼/全拼/汉字" />
+				</div><!--/input2-->
+				<input class='sub' type="submit" value="查询" />
+			</div><!--/c_contents4-->
+		</div><!--/c_right-->
+	</body>
+</html>

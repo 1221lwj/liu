@@ -1,0 +1,20 @@
+$(function(){
+	$(".li2").hover(function(){
+		$(".div_nav").toggle()
+	});
+	$(".div_nav").hover(function(){
+		$(".div_nav").toggle()
+	});
+	$(".detail_li1").click(function(){
+		$(".detail_p").show()
+		$(".detail_p2").hide()
+		$(".detail_li1").addClass("border_bottom")
+		$(".detail_li2").removeClass("border_bottom")
+	})
+	$(".detail_li2").click(function(){
+		$(".detail_p2").show()
+		$(".detail_p").hide()
+		$(".detail_li2").addClass("border_bottom")
+		$(".detail_li1").removeClass("border_bottom")
+	})
+})

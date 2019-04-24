@@ -1,0 +1,115 @@
+*{margin:0;padding:0;}
+li{list-style: none;}
+a{text-decoration: none;}
+i{font-style: normal;}
+body{padding-top:20px;}
+.header img{display:inline-block;}
+.header{display:flex;margin-left:8%;}
+.right{display:flex;margin-left:100px;background: url(../images/bg.png) no-repeat; width:875px;height:35px;padding:5px 0px 0px 100px;}
+.sousuo{display:flex}
+.sousuo input {text-indent:0.5em;width:420px;height:28px;border:1px solid #DEDEDE;font-size:12px;}
+.sousuo button{width:30px;height:30px;border:0;background:url(../images/2_03.png) center no-repeat #3B99FC;}
+.header_right{margin-left:75px;display:inline-block;line-height: 30px;}
+.header_right a:nth-child(1){color:#3B99FB;font-size:12px;background:url(../images/b_03.png)  right no-repeat;width:85px;text-align: left;}
+.header_right a{color:#333333;font-size: 14px;display: inline-block;}
+.nav{height:40px;background-color:#3B99FC;}
+.nav a {color:#FFF;}
+.nav_ul{display:flex;margin:0 auto;width:1155px;line-height: 40px;}
+.nav_li{width:145px;font-size:14px;text-align: center;}
+.nav_li:hover{background-color:#2676E3;}
+.li2{width:145px;margin-left:30px;text-align: center;}
+.li2:hover{background-color:#2676E3;}
+.nav li:nth-child(1){background-color:#2676E3;background-image: none !important;}
+.nav img {display:inline-block;padding-left:15px;}
+.nav img:hover{transform: rotate(180deg);transition-duration: 1s;}
+.div_nav{display:none;width:82%;position:absolute;z-index:20;margin-left:7%;}
+.nav_erzong{background-color:#fff;display:flex;border:1px solid #ADD1F9;padding: 15px 95px 15px 0px;}
+.nav_er{display:flex;height:115px;line-height: 40px;width:375px;}
+.nav_er ul{padding:0px 100px 0px 30px;border-left:1px solid #ADD1F9;}
+.nav_erzong ul:nth-child(1){border:0 !important}
+.nav_er a{color:#666666;font-size:14px;}
+.pp p:nth-child(1){border-left:1px solid #ADD1F9;padding-left:30px;}
+.pp p:nth-child(2){border-left:1px solid #ADD1F9;padding-left:30px;}
+.pp {color:#666666;height:35px;line-height: 30px;padding-top:40px;}
+.car_header{font-size:12px;width:1190px;height:70px;border:1px solid #3391D0;border-radius:5px;margin:10px auto;background-color:#EEF1F8;}
+.radio_left{height:50px;line-height:25px;margin:10px 0px 0px 10px;border-right:1px solid #5FB0DC;padding-right:30px}
+.car_header{display:flex}
+.input_center{padding:25px 20px}
+.input_center1{width:120px;height:30px;border:1px solid #3391D0;margin-right:20px;display:inline-block}
+.input_center2{width:120px;height:30px;border:1px solid #3391D0;}
+.mudi{margin-left:20px;display:inline-block}
+.img{vertical-align: middle;}
+.chufa{margin-left:20px}
+.radio_right{padding:5px 30px 10px 25px;}
+.btn{margin-left:10px;width:90px;height:30px;background-color:#FF8000;border:0;color:#fff;text-align: center;border-radius:4px}
+.radio_right_two{padding-top:10px}
+.cha_check{margin-left:10px}
+.tankuang{display:none;width:440px;height:250px;border:1px solid #2B8CCE;position:absolute;z-index:10;background-color:#fff;left:220px;top:180px}
+.tankuang_header{display:flex;justify-content: space-between;padding:7px 12px 7px 19px;background-color:#EEF1F8}
+.tankuang_header>p{color:#666;font-size:14px;}
+.tankuang_header>img{cursor: pointer;}
+.tankuang_ul{display:flex;background-color:#298CCE;height:30px;padding-top:5px;}
+.tankuang_ul>li{color:#E6F9FF;font-size:14px;cursor: pointer;width:70px;line-height: 30px;text-align: center;}
+.click{background-color:#66C8E8;width:70px;height:30px;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.tankuang_p{display:none;color:#666;font-size:14px;width:380px;height:150px;margin:0 auto}
+.tankuang_p>p{padding-bottom:10px}
+.tankuang_p2{display:none;color:#666;font-size:14px;width:380px;height:150px;margin:0 auto}
+.tankuang_p2>p{padding-bottom:10px}
+.tankuang_p3{display:none;color:#666;font-size:14px;width:380px;height:150px;margin:0 auto}
+.tankuang_p3>p{padding-bottom:10px}
+.tankuang_p4{display:none;color:#666;font-size:14px;width:380px;height:150px;margin:0 auto}
+.tankuang_p4>p{padding-bottom:10px}
+.tankuang_p5{display:none;color:#666;font-size:14px;width:380px;height:150px;margin:0 auto}
+.tankuang_p5>p{padding-bottom:10px}
+.tankuang_p6{display:none;color:#666;font-size:14px;width:380px;height:150px;margin:0 auto}
+.tankuang_p6>p{padding-bottom:10px}
+.car_contents{font-size:14px;width:1190px;height:100px;border:1px solid #3391D0;border-radius:5px;margin:10px auto;}
+.car_contents_ul{display:flex;}
+.car_contents_ul>li{width:55px;border-bottom:1px solid #999;background-color:#E8E8E8;border-right:1px solid #999;height:30px;line-height: 30px;text-align: center;}
+.li1{width:145px!important;height:30px;background-color:#fff!important;border-bottom:0!important;font-weight: bold;color:#3391D0 !important;}
+/* .li1_1{width:55px;border-bottom:1px solid #999;background-color:#E8E8E8;border-right:1px solid #999;height:30px;line-height: 30px;text-align: center;}} */
+.car_contents_ul>li:hover{width:145px;height:30px;background-color:#fff;border-bottom:0;font-weight: bold;color:#3391D0 !important;}
+#car_lei{display:flex;font-size:12px;padding:10px 0px 0px 20px;}
+#car_lei>p:nth-child(1){color:#333;font-weight: bold;}
+#car_lei>p:nth-child(2){background-color:#8EA6D4;width:30px;height:18px;font-size:12px;border-radius:3px;color:#fff;text-align: center;cursor: pointer;position:absolute;left:160px}
+.checkboxall{width:30px;height:20px;}
+.car_check{margin-left:10px;}
+.car_check3{margin-left:45px;}
+#car_lei>select{margin-left:5px;}
+.car_time{display:inline-block;margin-left:30%;}
+.cheng{padding-top:10px;display:inline-block;padding-left:20px;font-size: 12px;font-weight: bold;}
+.qing{display:inline-block;width:75px;height:20px;background-color:#F7F7F7;border:1px solid #CFCDC7;color:#333;text-align: center;line-height: 20px;border-radius: 5px;cursor: pointer;}
+.qing_tankuang_header{padding:5px 0px 0px 10px;width:635px;height:30px;background-color:#62C7E7;}
+.qing_tankuang_header>input{border-radius:5px;border:0;display:inline-block;width:140px;height:25px;background-color:#fff;color:#747476;}
+.qing_tankuang_header>label{color:#EEFFFE}
+.shu{color:#0078FE;display:inline-block;margin-left:50%;cursor: pointer;}
+.guan{color:#0078FE;cursor: pointer;}
+.qing_tankuang{display:none;width:645px;height:135px;border:1px solid #288DCF;position:absolute;top:293px;left:160px}
+.goupiao{display:none}
+.goupiao_ul{padding:10px;display:flex;width:1175px;height:35px;margin:0 auto;font-size:14px;color:#fff;background-color:#2689CA;}
+.goupiao_ul>li{text-align:center;border-right:1px solid;width:85px;line-height:35px;}
+.goupiao_ul>li>span{display:block;line-height: 18px;}
+.goupiao_ul>li:last-child{border:0}
+table{margin:0 auto;border-collapse:collapse}
+table tr:nth-child(odd){background-color:#EEF1F8}
+table tr:nth-child(even){background-color:#fff}
+table a{color:#fff}
+td:nth-child(1){border-top:0;border-right:0;}
+td:nth-child(2){border-top:0;border-left:0;border-right:0;}
+td:nth-child(3){border-top:0;border-left:0;border-right:0;text-align: left;}
+td:nth-child(4){border-top:0;border-left:0;border-right:0;text-align: left;}
+td{height:40px;border:1px solid #B0CEDD;text-align:center;width:60px;}
+tr td:nth-child(1) span:nth-child(1){font-weight: bold;font-size:18px;text-decoration: underline}
+tr td:nth-child(1) img{vertical-align: middle;display:inline-block;padding-left:5px;}
+tr td:nth-child(2){text-align: left;}
+tr td:nth-child(2) span:nth-child(1){font-size: 12px;color:#CF973F;}
+tr td:nth-child(2) span:nth-child(2){font-size: 12px;font-weight: bold;}
+tr td:nth-child(2) span:nth-child(3){font-size: 12px;color:#CF973F;}
+tr td:nth-child(2) span:nth-child(4){font-size: 12px;font-weight: bold;}
+tr td:nth-child(3) span:nth-child(1){font-weight: bold;display:block}
+tr td:nth-child(3) span:nth-child(2){font-weight: bold;color:#999}
+tr td:nth-child(4) span:nth-child(1){font-size:14px;font-weight: bold;display:block}
+tr td:nth-child(4) span:nth-child(2){font-size:14px;}
+tr td:last-child button{cursor: pointer;width:70px;height:30px;background-color:#0080FF;border:0;border-radius: 5px;color:#fff}
+.tr2{color:#FC8302;font-size:12px;display:none}
+.tr1{color:#FC8302;font-size:12px;display:none}

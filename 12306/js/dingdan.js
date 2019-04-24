@@ -1,0 +1,20 @@
+$(function(){
+	$(".li2").hover(function(){
+		$(".div_nav").toggle()
+	});
+	$(".div_nav").hover(function(){
+		$(".div_nav").toggle()
+	});
+	$(".quxiao").click(function(){
+		$(".order_quxiao").show();
+	})
+	$(".cha").click(function(){
+		$(".order_quxiao").hide()
+	})
+	$(".require").click(function(){
+		$(".order_quxiao").hide()
+	})
+	$(".quxiao2").click(function(){
+		$(".order_quxiao").hide()
+	})
+})

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>车票查询</title>
+		<link rel="stylesheet" type="text/css" href="css/chepiao.css"/>
+  		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>  		
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src='js/chepiao.js'></script>
+	</head>
+	<body>
+		<div class="header">
+			<img src="images/1_03.png" alt='logo' title='中国铁路12306' width='200' height='50' >
+			<div class="right">
+				<div class="sousuo">
+					<input type="text" placeholder="搜索车票/餐饮/常旅客/相关规章" />
+					<button type="submit"></button>
+				</div><!--/sousuo-->
+				<div class="header_right">
+					<a href="#">我的12306
+						<!-- <ul class='a_ul'>
+							<li><a href='#'>火车票订单</a></li>
+							<li><a href='#'>候补订单</a></li>
+							<li><a href='#'>我的行程</a></li>
+							<li><a href='#'>我的餐饮.特产</a></li>
+							<li><a href='#'>我的保险</a></li>
+							<li><a href='#'>我的会员</a></li>
+							<li><a href='#'>查看个人信息</a></li>
+							<li><a href='#'>账户安全</a></li>
+							<li><a href='#'>常用联系人</a></li>
+							<li><a href='#'>车票快递地址</a></li>
+							<li><a href='#'>温馨服务查询</a></li>
+						</ul> -->
+					</a>
+					<a href="#">登录</a>
+					<a href="#">注册</a>
+				</div><!--header_right-->
+			</div><!--/right-->
+		</div><!--/header-->
+		<div class="nav">
+			<ul class='nav_ul'>
+				<li class='nav_li'><a href='index.html'>首页</a></li>
+				<li class='li2'><a href='#'>车票<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>团购服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>会员服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>站车服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>商旅服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>出行指南<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>信息查询<img src="images/xia_03.png" ></a></li>
+			</ul>
+		</div><!--/nav-->
+		<div class="div_nav">
+			<div class="nav_erzong">
+				<div class="nav_er">
+					<ul class='nav_er_ul'>
+						<li class='nav_er_li'><a href='#' style='color:#3A99FD'>购买</a></li>
+						<li class='nav_er_li'><a href='#'>单程</a></li>
+						<li class='nav_er_li'><a href='#'>接续换乘</a></li>
+					</ul>
+					<div class="pp">
+						<p style='height:60px'><a href='#'>往返</a></p>
+					</div><!--/pp-->
+				</div><!--/nav_er-->
+				<div class="nav_er">
+					<ul class='nav_er_ul'>
+						<li class='nav_er_li'><a href='#' style='color:#3A99FD'>变更</a></li>
+						<li class='nav_er_li'><a href='#'>单程</a></li>
+						<li class='nav_er_li'><a href='#'>接续换乘</a></li>
+					</ul>
+					<div class="pp">
+						<p style='height:60px'><a href='#'>改签</a></p>
+					</div><!--/pp-->
+				</div><!--/nav_er-->
+				<div class="nav_er">
+					<ul class='nav_er_ul'>
+						<li class='nav_er_li'><a href='#' style='color:#3A99FD'>更多</a></li>
+						<li class='nav_er_li'><a href='#'>中铁银通车</a></li>
+						<li class='nav_er_li'><a href='#'>市郊快速铁路</a></li>
+					</ul>
+					<div class="pp">
+						<p><a href='#'>广九直通车</a></p>
+						<p><a href='#'>国际列车</a></p>
+					</div><!--/pp-->
+				</div><!--/nav_er-->
+			</div><!--/nav_erzong-->
+		</div><!--/div_nav-->
+		<div class="car_header">
+			<div class="radio_left">
+				<div class="radio_left_1">
+					<input name="radio" type="radio" checked>
+					<label >单程</label>
+				</div><!--/radio_left_1-->
+				<div class="radio_left_2">
+					<input name="radio" type="radio" checked>
+					<label>往返</label>
+				</div><!--/radio_left_2-->
+			</div><!--/radio_left-->
+			<div class="input_center">
+				<label>出发地</label>
+				<input type="text" class='input_center1' />
+				<img src="images/qie_03.png" width=20 height=20 class='img' />
+				<label class='mudi'>目的地</label>
+				<input type="text" class='input_center1' />
+				<label class='chufa'>出发日</label>
+				<input type="date" class='input_center2' />
+				<label class='chufa'>返程日</label>
+				<input type="date" class='input_center2' />
+			</div><!--/input_center-->
+			<div class="radio_right">
+				<div class="radio_right_one">
+					<input type="radio" name='buy' />
+					<label>普通</label>
+					<button type="button" class='btn'>查询</button>
+				</div><!--/radio_right_one-->
+				<div class="radio_right_two">
+					<input type="radio" name='buy' />
+					<label>学生</label>
+					<input name="Checkbox" type="checkbox" class='cha_check' checked>
+					<label>开启自动查询</label>
+				</div><!--/radio_right_two-->
+			</div><!--/radio_right-->
+		</div><!--/car_header-->
+		<div class="tankuang">
+			<div class="tankuang_header">
+				<p>拼音支持首字母输入</p>
+				<img src="images/cha_03.png" width=17px height=17 />
+			</div><!--/tankuang_header-->
+			<ul class='tankuang_ul'>
+				<li>热门</li>
+				<li>ABCDE</li>
+				<li>FGHIJ</li>
+				<li>KLMNO</li>
+				<li>PQRST</li>
+				<li>UVWXYZ</li>
+			</ul>
+			<div class="tankuang_p">
+				<p class='li1_p'>北京 &nbsp;&nbsp;&nbsp;&nbsp;上海 &nbsp;&nbsp;&nbsp;&nbsp;南京 &nbsp;&nbsp;&nbsp;&nbsp;武汉 &nbsp;&nbsp;&nbsp;&nbsp;长沙 &nbsp;&nbsp;&nbsp;&nbsp;南通 &nbsp;&nbsp;&nbsp;&nbsp;临沂 &nbsp;&nbsp;&nbsp;&nbsp;济南 </p>
+				<p class='li1_p'>北京 &nbsp;&nbsp;&nbsp;&nbsp;上海 &nbsp;&nbsp;&nbsp;&nbsp;南京 &nbsp;&nbsp;&nbsp;&nbsp;武汉 &nbsp;&nbsp;&nbsp;&nbsp;长沙 &nbsp;&nbsp;&nbsp;&nbsp;南通 &nbsp;&nbsp;&nbsp;&nbsp;临沂 &nbsp;&nbsp;&nbsp;&nbsp;济南 </p>
+				<p class='li1_p'>北京 &nbsp;&nbsp;&nbsp;&nbsp;上海 &nbsp;&nbsp;&nbsp;&nbsp;南京 &nbsp;&nbsp;&nbsp;&nbsp;武汉 &nbsp;&nbsp;&nbsp;&nbsp;长沙 &nbsp;&nbsp;&nbsp;&nbsp;南通 &nbsp;&nbsp;&nbsp;&nbsp;临沂 &nbsp;&nbsp;&nbsp;&nbsp;济南 </p>
+				<p class='li1_p'>北京 &nbsp;&nbsp;&nbsp;&nbsp;上海 &nbsp;&nbsp;&nbsp;&nbsp;南京 &nbsp;&nbsp;&nbsp;&nbsp;武汉 &nbsp;&nbsp;&nbsp;&nbsp;长沙 &nbsp;&nbsp;&nbsp;&nbsp;南通 &nbsp;&nbsp;&nbsp;&nbsp;临沂 &nbsp;&nbsp;&nbsp;&nbsp;济南 </p>
+				<p class='li1_p'>北京 &nbsp;&nbsp;&nbsp;&nbsp;上海 &nbsp;&nbsp;&nbsp;&nbsp;南京 &nbsp;&nbsp;&nbsp;&nbsp;武汉 &nbsp;&nbsp;&nbsp;&nbsp;长沙 &nbsp;&nbsp;&nbsp;&nbsp;南通 &nbsp;&nbsp;&nbsp;&nbsp;临沂 &nbsp;&nbsp;&nbsp;&nbsp;济南 </p>
+			</div><!--/tankuang_p-->
+			<div class="tankuang_p2">
+				<p>2</p>
+			</div>
+			<div class="tankuang_p3">
+				<p>3</p>
+			</div>
+			<div class="tankuang_p4">
+				<p>4</p>
+			</div>
+			<div class="tankuang_p5">
+				<p>5</p>
+			</div>
+			<div class="tankuang_p6">
+				<p>6</p>
+			</div>
+			</div><!--/tankuang-->
+		<div class="car_contents">
+			<ul class='car_contents_ul'>
+				<li class="li1">04-23<i class='span'>周二</i></li>
+				<li>04-24<i></i></li>
+				<li>04-25</li>
+				<li>04-26</li>
+				<li>04-27</li>
+				<li>04-23</li>
+				<li>04-24</li>
+				<li>04-25</li>
+				<li>04-26</li>
+				<li>04-27</li>
+				<li>04-23</li>
+				<li>04-24</li>
+				<li>04-25</li>
+				<li>04-26</li>
+				<li>04-27</li>
+				<li>04-23</li>
+				<li>04-24</li>
+				<li>04-25</li>
+				<li>04-26</li>
+				<li>04-27</li>
+			</ul>
+			<div id="car_lei">
+				<p>车次类型:</p>
+				<p>全部</p>
+				<input class='checkboxall' type="checkbox"  v-model="checked" @change="changeAllChecked()">
+				<div class="car_check">
+					<input name="Checkbox" type="checkbox" value='value1' v-model="checkedNames" class='car_check1' checked>
+					<label>GC-高铁/城际</label>
+					<input name="Checkbox" type="checkbox" value='value2' v-model="checkedNames" class='car_check1' checked>
+					<label>D-动车</label>
+					<input name="Checkbox" type="checkbox" value='value3' v-model="checkedNames" class='car_check3' checked>
+					<label>Z-直达</label>
+					<input name="Checkbox" type="checkbox" value='value4' v-model="checkedNames" class='car_check3' checked>
+					<label>T-特快</label>
+					<input name="Checkbox" type="checkbox" value='value5' v-model="checkedNames" class='car_check3' checked>
+					<label>K-快速</label>
+					<input name="Checkbox" type="checkbox"  value='value6' v-model="checkedNames" class='car_check3' checked>
+					<label>其他</label>
+				</div><!--/car_check-->
+				<label class='car_time'>发车时间:</label>
+				<select name="">
+					<option value="">00:00--24:00</option>
+				</select>
+			</div><!--/car_lei-->
+			<p class='cheng'>乘车人：</p>
+			<p class='qing'>请选择</p>
+		</div><!--/car_contents-->
+		<div class="qing_tankuang">
+			<div class="qing_tankuang_header">
+				<input type="text" placeholder="请输入乘客姓名" />
+				<label>常用联系人</label>
+				<span class='shu'>刷新</span>
+				<span class='guan'>关闭</span>
+			</div><!--/qing_tankuang_header-->
+			<div class="qing_tankang_p">
+				<p>111</p>
+			</div><!--/qing_tankang_p-->
+		</div><!--/qing_tankaung-->
+		<div class="goupiao">
+			<ul class='goupiao_ul'>
+				<li>车次</li>
+				<li><span>出发站</span><span>到达站</span></li>
+				<li><span>出发时间</span><span>到达时间</span></li>
+				<li>历时</li>
+				<li><span>商务座</span><span>特等座</span></li>
+				<li>一等座</li>
+				<li>二等座</li>
+				<li>高级软卧</li>
+				<li><span>软卧</span><span>一等卧</span></li>
+				<li>动卧</li>
+				<li><span>硬卧</span><span>二等卧</span></li>
+				<li>软座</li>
+				<li>硬座</li>
+				<li>无座</li>
+				<li>其他</li>
+				<li>备注</li>
+			</ul>
+			<table cellspacing="0" cellpadding="0" width=1190>
+				<tr>
+					<td><span>G14</span><img src="images/price_03.png" title='查看票价' width=15 height=23 ></td>
+					<td>
+						<div class="span_div">
+							<span>始</span><span>上海虹桥</span>
+						</div>
+						<div class="div_span">
+							<span>过</span><span>天津南</span>
+						</div>
+					</td>
+					<td><span>15:00</span><span>18:59</span></td>
+					<td><span>03:59</span><span>当日到达</span></td>
+					<td>3</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td><button type="button"><a href='yuding.html'>预定</a></button></td>
+				</tr>
+				<!--00000000000000000000000000000000000000000000000-->
+				<tr class='tr2'>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>￥1603.5</td>
+					<td>￥853.5</td>
+					<td>￥508.5</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<!--oooooooooooooooooooooooooooooooooooooooooooo-->
+				<tr>
+					<td><span>G14</span><img src="images/price2_03.png" title='查看票价' width=15 height=23 ></td>
+					<td>
+						<div class="span_div">
+							<span>始</span><span>上海虹桥</span>
+						</div>
+						<div class="div_span">
+							<span>过</span><span>天津南</span>
+						</div>
+					</td>
+					<td><span>15:00</span><span>18:59</span></td>
+					<td><span>03:59</span><span>当日到达</span></td>
+					<td>3</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td>无</td>
+					<td><button type="button"><a href='yuding.html'>预定</a></button></td>
+				</tr>
+				<!--00000000000000000000000000000000000000000000000-->
+				<tr class='tr1'>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>￥1603.5</td>
+					<td>￥853.5</td>
+					<td>￥508.5</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<!--oooooooooooooooooooooooooooooooooooooooooooo-->
+			</table>
+		</div><!--/goupiao-->
+<script type="text/javascript">
+	new Vue({
+	el: '#car_lei',
+	data: {
+		checked: false,
+		checkedNames: [],
+		checkedArr: ["value1", "value2", "value3","value4", "value5", "value6"]
+	},
+	methods: {
+		changeAllChecked: function() {
+			if (this.checked) {
+				this.checkedNames = this.checkedArr
+			} else {
+				this.checkedNames = []
+			}
+		}
+	},
+	watch: {
+		"checkedNames": function() {
+			if (this.checkedNames.length == this.checkedArr.length) {
+				this.checked = true
+			} else {
+				this.checked = false
+			}
+		}
+	}
+})
+	
+</script>
+	</body>
+</html>

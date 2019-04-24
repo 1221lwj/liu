@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>预定火车票</title>
+		<link rel="stylesheet" type="text/css" href="css/yuding.css"/>
+		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>  		
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src='js/yuding.js'></script>
+	</head>
+	<body>
+		<div class="header">
+			<img src="images/1_03.png" alt='logo' title='中国铁路12306' width='200' height='50' >
+			<div class="right">
+				<div class="sousuo">
+					<input type="text" placeholder="搜索车票/餐饮/常旅客/相关规章" />
+					<button type="submit"></button>
+				</div><!--/sousuo-->
+				<div class="header_right">
+					<a href="#">我的12306
+						<!-- <ul class='a_ul'>
+							<li><a href='#'>火车票订单</a></li>
+							<li><a href='#'>候补订单</a></li>
+							<li><a href='#'>我的行程</a></li>
+							<li><a href='#'>我的餐饮.特产</a></li>
+							<li><a href='#'>我的保险</a></li>
+							<li><a href='#'>我的会员</a></li>
+							<li><a href='#'>查看个人信息</a></li>
+							<li><a href='#'>账户安全</a></li>
+							<li><a href='#'>常用联系人</a></li>
+							<li><a href='#'>车票快递地址</a></li>
+							<li><a href='#'>温馨服务查询</a></li>
+						</ul> -->
+					</a>
+					<a href="#">登录</a>
+					<a href="#">注册</a>
+				</div><!--header_right-->
+			</div><!--/right-->
+		</div><!--/header-->
+		<div class="nav">
+			<ul class='nav_ul'>
+				<li class='nav_li'><a href='index.html'>首页</a></li>
+				<li class='li2'><a href='#'>车票<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>团购服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>会员服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>站车服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>商旅服务<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>出行指南<img src="images/xia_03.png" ></a></li>
+				<li class='nav_li'><a href='#'>信息查询<img src="images/xia_03.png" ></a></li>
+			</ul>
+		</div><!--/nav-->
+		<div class="div_nav">
+			<div class="nav_erzong">
+				<div class="nav_er">
+					<ul class='nav_er_ul'>
+						<li class='nav_er_li'><a href='#' style='color:#3A99FD'>购买</a></li>
+						<li class='nav_er_li'><a href='#'>单程</a></li>
+						<li class='nav_er_li'><a href='#'>接续换乘</a></li>
+					</ul>
+					<div class="pp">
+						<p style='height:60px'><a href='#'>往返</a></p>
+					</div><!--/pp-->
+				</div><!--/nav_er-->
+				<div class="nav_er">
+					<ul class='nav_er_ul'>
+						<li class='nav_er_li'><a href='#' style='color:#3A99FD'>变更</a></li>
+						<li class='nav_er_li'><a href='#'>单程</a></li>
+						<li class='nav_er_li'><a href='#'>接续换乘</a></li>
+					</ul>
+					<div class="pp">
+						<p style='height:60px'><a href='#'>改签</a></p>
+					</div><!--/pp-->
+				</div><!--/nav_er-->
+				<div class="nav_er">
+					<ul class='nav_er_ul'>
+						<li class='nav_er_li'><a href='#' style='color:#3A99FD'>更多</a></li>
+						<li class='nav_er_li'><a href='#'>中铁银通车</a></li>
+						<li class='nav_er_li'><a href='#'>市郊快速铁路</a></li>
+					</ul>
+					<div class="pp">
+						<p><a href='#'>广九直通车</a></p>
+						<p><a href='#'>国际列车</a></p>
+					</div><!--/pp-->
+				</div><!--/nav_er-->
+			</div><!--/nav_erzong-->
+		</div><!--/div_nav-->
+		<div class="tanceng">
+			<div class="car_info">
+				<div class="car_info_header">
+					<p>列车信息(以下信息仅供参考)</p>
+				</div><!--/car_info_header-->
+				<div class="car_info_contents">
+					<p>2019-04-24（周三）</p>
+					<p>k762<i>次</i>泰山<i>站（00:10开）—烟台<i>站（7:40到）</i></p>
+				</div><!--/car_info_contents-->
+				<div class="car_info_ul">
+					<ul>
+						<li>软卧<i>（￥222.0）</i>7张票</li>
+						<li>硬卧<i>（￥222.0）</i>有票</li>
+						<li>硬座<i>（￥222.0）</i>有票</li>
+						<li>无座<i>（￥222.0）</i>有票</li>
+					</ul>
+					<p>*显示的卧铺票价均为上铺票价，供您参考。具体票价以您确认支付时实际购买的铺别票价为准。</p>
+				</div><!--/car_info_ul-->
+			</div><!--/car_info-->
+			</div><!--/car_info-->
+			<div class="per_info">
+				<div class="per_info_header">
+					<p>乘客信息(填写说明)</p>
+					<input type="text" placeholder="输入乘客姓名" />
+					<button type="button">搜索</button>
+				</div><!--/per_info_header-->
+				<div class="per_info_count">
+						<input name="Checkbox" type="checkbox" checked>
+						<label>张三</label>
+						<input name="Checkbox" type="checkbox" checked>
+						<label>王五</label>
+						<input name="Checkbox" type="checkbox" checked>
+						<label>李四</label>
+						<input name="Checkbox" type="checkbox" checked>
+						<label>黑熊</label>
+				</div><!--/per_info_count-->
+				<div class="per_info_style">
+					<ul class='per_info_style_ul'>
+						<li>序号</li>
+						<li>票种</li>
+						<li>席别</li>
+						<li>姓名</li>
+						<li>证件类型</li>
+						<li>证件号码</li>
+						<li>手机号码</li>
+					</ul>
+					<ul class='per_info_style_ul2' style='border-top:0'>
+						<li>1</li>
+						<li>
+							<select name="">
+								<option value="">成人票</option>
+							</select>
+						</li>
+						<li> 
+							<select name="">
+								<option value="">一等座(￥666.0)</option>
+							</select>
+						</li>
+						<li><input type="text" disabled="disabled" /></li>
+						<li><input type="text" disabled="disabled" placeholder="中国居民身份证" /></li>
+						<li><input type="text" disabled="disabled"/></li>
+						<li><input type="text" disabled="disabled" /></li>
+						<li>X</li>
+					</ul><!--/per_info_style_ul2-->
+					<div class="footer">
+						<a href='chepiao.html'>上一步</a>
+						<button type="submit" class='tijiao'><a href="#">提交订单</a></button>
+					</div><!--/footer-->
+				</div><!--/per_info_style-->
+			</div><!--/per_info-->
+		</div><!--/tanceng-->
+		<div class="buy_info">
+			<div class="buy_info_header">
+				<p>请核对一下信息</p>
+			</div><!--/buy_info_header-->
+			<p class='buy_info_p'>k762<i>次</i>泰山<i>站</i>（00:10开）—烟台<i>站（7:40到）</i></p>
+			<div class="buy_info_ul">
+				<ul class='buy_info_ul1'>
+					<li>序号</li>
+					<li>票种</li>
+					<li>席别</li>
+					<li>姓名</li>
+					<li>证件类型</li>
+					<li>证件号码</li>
+					<li>手机号码</li>
+				</ul>
+				<ul class='buy_info_ul2' style='border-top:0'>
+					<li>1</li>
+					<li>二等座</li>
+					<li>成人票</li>
+					<li>张三</li>
+					<li>中国居民身份证</li>
+					<li>37132420000114526X</li>
+					<li></li>
+				</ul>
+				<p class='buy_info_p2'>本次列车,二等座余票<span>164</span>张</p>
+			</div><!--/buy_info_ul-->
+			<div class="buy_info_footer">
+				<a href="#" class='fanhui'>返回修改</a>
+				<button type="submit"><a href='dingdan.html'>确认</a></button>
+			</div><!--/buy_info_footer-->
+		</div><!--/buy_info-->
+	</body>
+</html>
