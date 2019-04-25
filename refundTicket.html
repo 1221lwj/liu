@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To refund a ticket</title>
+    <link rel="stylesheet" href="./css/refundTicket.css">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="a">
+        <img src="img/logo@2x.png" alt='logo' title='中国铁路12306' width='200' height='50'>
+    </a>
+    <div class="right">
+        <div class="in">
+            <input type="text" placeholder="搜索车票/餐饮/常旅客/相关规章">
+            <button class="iconfont icon-sousuo"></button>
+        </div>
+        <div class="wo">
+            <span style="color: #3B99FB; font-size: 14px">
+                我的12306
+                <img src="./img/jt.png" alt=""> |
+            </span>
+            <span>
+                您好，
+                <span>
+                    <a href="#" style="color: #3B99FB;text-decoration: none">沈学坤</a>|
+                    <a href="#" style="color: #3B99FB;text-decoration: none">退出</a>
+                </span>
+            </span>
+        </div>
+    </div>
+</header><!--/header-->
+
+<div class="nav-box">
+    <ul class="nav">
+        <li id="J-index" class="nav-item nav-item-w1">
+            <a name="g_href" data-type="1" data-href="index.html" data-redirect="Y" href="javascript:;" class="nav-hd">首页</a>
+        </li>
+        <li id="J-chepiao" class="nav-item nav-item-w1 active">
+            <a href="javascript:void(0)" class="nav-hd">车票
+                <i class="icon icon-down"></i>
+            </a>
+            <div class="nav-bd">
+                <div class="nav-bd-item nav-col2">
+                    <h3 class="nav-tit">购买</h3>
+                    <ul class="nav-con">
+                        <li class="nav_dan">
+                            <a name="g_href" data-type="2" data-href="leftTicket/init?linktypeid=dc" data-redirect="Y"
+                               href="javascript:;">单程</a>
+                        </li>
+                        <li class="nav_wang">
+                            <a name="g_href" data-type="2" data-href="leftTicket/init?linktypeid=wf" data-redirect="Y"
+                               href="javascript:;">往返</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="lcQuery/init" data-redirect="Y"
+                               href="javascript:;">接续换乘</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item nav-col2">
+                    <h3 class="nav-tit">变更</h3>
+                    <ul class="nav-con">
+                        <li class="nav_ref">
+                            <a name="g_href" data-type="2" data-href="view/train_order.html?type=2&amp;typefilt=4"
+                               data-redirect="Y" href="javascript:;">退票</a>
+                        </li>
+                        <li class="nav_res">
+                            <a name="g_href" data-type="2" data-href="view/train_order.html?type=2&amp;typefilt=2"
+                               data-redirect="Y" href="javascript:;">改签</a>
+                        </li>
+                        <li class="nav_chg">
+                            <a name="g_href" data-type="2" data-href="view/train_order.html?type=2&amp;typefilt=3"
+                               data-redirect="Y" href="javascript:;">变更到站</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item nav-col2">
+                    <h3 class="nav-tit border-none">更多</h3>
+                    <ul class="nav-con">
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/ticket/zt_card.html" data-redirect="Y"
+                               href="javascript:;">中铁银通卡</a>
+                        </li>
+                        <li class="border-none">
+                            <a name="g_href" data-type="1" data-href="view/ticket/through_train.html" data-redirect="Y"
+                               href="javascript:;">广九直通车</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/ticket/railway.html" data-redirect="Y"
+                               href="javascript:;">市郊快速铁路</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/ticket/international_train.html"
+                               data-redirect="Y" href="javascript:;">国际列车</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-tuangoufuwu" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">团购服务
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col6 ">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/group/group_management.html?type=1"
+                               data-redirect="Y" href="javascript:;">务工人员</a>
+                        </li>
+
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/group/group_management.html?type=2"
+                               data-redirect="Y" href="javascript:;">学生团体</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-huiyuanfuwu" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">会员服务
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col6">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="3" data-href="index.html" data-redirect="Y" href="javascript:;">会员管理</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="3" data-href="index.html" data-redirect="Y" href="javascript:;">积分账户</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="3" data-href="index.html" data-redirect="Y" href="javascript:;">积分兑换</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="3" data-href="index.html" data-redirect="Y" href="javascript:;">会员专享</a>
+                        </li>
+                        <li class="border-none ">
+                            <a name="g_href" data-type="3" data-href="welcome.html" data-redirect="Y"
+                               href="javascript:;">会员中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-zhanchefuwu" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">站车服务
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col4 ">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="view/icentre_qxyyInfo.html" data-redirect="Y"
+                               href="javascript:;">重点旅客预约</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/station/hand.html" data-redirect="Y"
+                               href="javascript:;">便民托运</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/station/shared_Car.html" data-redirect="Y"
+                               href="javascript:;">共享汽车</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="4" data-href="czyd_2143/" data-redirect="Y" href="javascript:;">车站引导</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="view/icentre_lostInfo.html" data-redirect="Y"
+                               href="javascript:;">遗失物品查找</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/station/train_intro.html" data-redirect="Y"
+                               href="javascript:;">动车组介绍</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/station/custom_PickUp.html" data-redirect="Y"
+                               href="javascript:;">定制接送</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="4" data-href="zcfc_2548/" data-redirect="Y" href="javascript:;">站车风采</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="nav-bd-item ">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="4" data-href="czyd_2143/" data-redirect="Y" href="javascript:;">车站引导</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="4" data-href="zcfc_2548/" data-redirect="Y" href="javascript:;">站车风采</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </li>
+        <li id="J-shanlvfuwu" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">商旅服务
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col6 ">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="10" data-href="index.html" data-redirect="Y"
+                               href="javascript:;">餐饮•特产</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="5" data-href="" data-redirect="Y" href="javascript:;">旅游</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="view/my_insurance.html" data-redirect="Y"
+                               href="javascript:;">保险</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-chuxingzhinan" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">出行指南
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col2 ">
+                    <h3 class="nav-tit ">常见问题</h3>
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/ticketType.html" data-redirect="Y"
+                               href="javascript:;">车票</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/ticketWindow.html" data-redirect="Y"
+                               href="javascript:;">购票</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/windowEndorse.html" data-redirect="Y"
+                               href="javascript:;">改签、变更到站</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/windowRefund.html" data-redirect="Y"
+                               href="javascript:;">退票</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/help.html" data-redirect="Y"
+                               href="javascript:;" class="txt-lighter">更多&gt;&gt;</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item nav-col2 ">
+                    <h3 class="nav-tit ">旅客须知</h3>
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/usersNeedToKnow.html?linktypeid=txt"
+                               data-redirect="Y" href="javascript:;">铁路电子客票</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means5"
+                               data-redirect="Y" href="javascript:;">身份核验</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/help.html" data-redirect="Y"
+                               href="javascript:;" class="txt-lighter">更多&gt;&gt;</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item nav-col2 ">
+                    <h3 class="nav-tit border-none ">相关章程</h3>
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means1"
+                               data-redirect="Y" href="javascript:;">铁路互联网售票暂行办法</a>
+                        </li>
+                        <li class="border-none ">
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means2"
+                               data-redirect="Y" href="javascript:;">铁路旅客运输规程</a>
+                        </li>
+                        <li style="text-overflow:ellipsis;white-space:nowrap;">
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means6"
+                               data-redirect="Y" href="javascript:;">铁路进站乘车禁止和限制携带品公告</a>
+                        </li>
+                        <li class="border-none " style="text-overflow:ellipsis;white-space:nowrap;">
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means7"
+                               data-redirect="Y" href="javascript:;">广深港高速铁路跨境旅客运输组织规则</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/help.html" data-redirect="Y"
+                               href="javascript:;" class="txt-lighter">更多&gt;&gt;</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-xinxichaxun" class="nav-item last ">
+            <a href="javascript:void(0) " class="nav-hd ">信息查询
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col5 ">
+                    <h3 class="nav-tit border-none ">常用查询</h3>
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="zwdch/init" data-redirect="Y" href="javascript:;">正晚点</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="queryTrainInfo/init" data-redirect="Y"
+                               href="javascript:;">时刻表</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="leftTicketPrice/initPublicPrice" data-redirect="Y"
+                               href="javascript:;">公布票价</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/infos/ticket_check.html" data-redirect="Y"
+                               href="javascript:;">检票口</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/infos/sale_time.html" data-redirect="Y"
+                               href="javascript:;">起售时间</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-href="https://forecast.lytq.com/pc.html" data-redirect="N"
+                               data-target="_blank" href="javascript:;">天气</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/infos/jiaotong.html" data-redirect="Y"
+                               href="javascript:;">交通查询</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="queryAgencySellTicket/init" data-redirect="Y"
+                               href="javascript:;">代售点</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/infos/service_number.html" data-redirect="Y"
+                               href="javascript:;">客服电话</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item ">
+                    <ul class="nav-con nav-con-pt ">
+                        <li class="border-none">
+                            <a id="gLink" href="javascript:void(0)">最新发布</a>
+                        </li>
+                        <li class="border-none">
+                            <a name="g_href" data-type="6" data-href="queryDishonest/init" data-redirect="Y"
+                               href="javascript:;">信用信息</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div><!--/nav-->
+
+<div class="center">
+    <p>当前位置：<a href="#">个人中心</a> > <a href="#" style="color: #3B99FC;">查看个人信息</a></p>
+</div><!--/center-->
+<div class="contion">
+    <div class="item1">
+        <dl>
+            <dt>订单中心</dt>
+            <dd style="background-color: #3B99FC;"><a href="refundTicket.html" style="color: #fff;">火车票订单</a></dd>
+            <dd>账号安全</dd>
+            <dd>手机核验</dd>
+        </dl>
+        <dl>
+            <dt>个人信息</dt>
+            <dd><a href="view_personal_information.html">查看个人信息</a></dd>
+            <dd>账号安全</dd>
+            <dd>手机核验</dd>
+        </dl>
+        <dl>
+            <dt>常用信息管理</dt>
+            <dd><a href="top_contacts.html">常用联系人</a></dd>
+            <dd>车票快递地址</dd>
+        </dl>
+    </div>
+    <div class="item2">
+        <div class="head">
+            <ul>
+                <li><a href="javascript:void (0);" class="colors" id="noTrip">未出行订单</a></li>
+                <li><a href="javascript:void (0);" id="historicalOrder">历史订单</a></li>
+            </ul>
+        </div>
+        <div class="centent">
+            <div class="zi">
+                <select name="" id="">
+                    <option value="">按退票日期查询</option>
+                    <option value="">按乘车日期查询</option>
+                </select>
+                <input type="date" class="input">--<input type="date" class="input">
+                <input type="text" placeholder="订单号/车次/姓名" class="input">
+                <a href="javascript:;" class="btn w100" id="searchNoTrip">查询</a>
+            </div>
+
+            <div class="ss">
+                <div class="order-filter" style="margin-top: 20px">
+                    <a href="javascript:;" class="active">全部</a>
+                    <a href="javascript:;" class="">可改签</a>
+                    <a href="javascript:;" class="">可变更到站</a>
+                    <a href="javascript:;" class="">可退票</a>
+                </div>
+
+                <table class="order-panel-head title-text" style="">
+                    <tr>
+                        <th>车次信息</th>
+                        <th>旅客信息</th>
+                        <th>席位信息</th>
+                        <th>票价</th>
+                        <th>车票状态</th>
+                        <!-- <th>总金额</th> -->
+                    </tr>
+                </table>
+
+                <div class="table">
+                    <div class="order-item">
+                        <div class="order-item-hd">
+                            <i class="icon icon-fold i">@</i>
+                            <div class="order-hd-info">
+                                <span class="txt-light">订票日期：</span>
+                                <span class="dingqiaoDate" data-date="">2019-04-21</span>
+                            </div>
+                            <div class="order-hd-info">
+                                <span class="txt-light">订单号：</span>
+                                E695369829
+                            </div>
+                        </div>
+                        <div class="order-item-bd" style="display: block;">
+                            <table class="order-item-table" id="#">
+                                <tbody>
+                                <tr class="has-order-num ">
+                                    <td class="td-left align-top" rowspan="1">
+                                        <div class="order-info-ticket">
+                                            <!-- <div class="order-num-one">去程</div> -->
+                                            <div class="txt-bold txt-lg">泰山-->枣庄西 K491</div>
+                                            <div>2019-04-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:55 开</div>
+                                        </div>
+                                    </td>
+                                    <td style="width: 200px;">
+                                        <div class="passenger-operation">
+                                            <div class="passenger-check data-val" > </div>
+                                            <div>刘文浩 </div>
+                                            <div>中国居民身份证</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>硬座</div>
+                                        <div>05车无座</div>
+                                    </td>
+                                    <td>
+                                        <div>成人票</div>
+                                        <div><span class="txt-price">28.5元</span></div>
+                                    </td>
+
+                                    <td>
+                                        <div class="ticket-status-name">
+                                            <div> 改签票</div>
+                                            <a href="javascript:void(0)" class="txt-primary tuipiao">退票</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-left br-none quanxuan">
+                                        <label class="check-inline">
+
+                                        </label>
+                                    </td>
+                                    <td colspan="6" class="order-operation">
+                                        <div class="btn-right">
+                                            <a href="javascript:void(0)" class="btn  orderxiangqing"
+                                               style="background-color:#ff8201;color:#fff;">订单详情</a>
+                                            <a href="javascript:void(0)" class="btn orderInsurance">购/赠/退保险</a>
+
+                                            <a href="javascript:void(0)" class="btn btn-disabled">改签</a>
+
+
+                                            <a href="javascript:void(0)" class="btn btn-disabled">变更到站</a>
+
+
+                                            <a href="javascript:void(0)" data-sequence="E695369829"
+                                               class="btn queryCatering">餐饮•特产</a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sss start">
+
+                <table class="order-panel-head title-text" style="">
+                    <tr>
+                        <th>车次信息</th>
+                        <th>旅客信息</th>
+                        <th>席位信息</th>
+                        <th>票价</th>
+                        <th>车票状态</th>
+                        <!-- <th>总金额</th> -->
+                    </tr>
+                </table>
+
+                <div class="table">
+                    <div class="order-item">
+                        <div class="order-item-hd">
+                            <i class="icon icon-fold i">@</i>
+                            <div class="order-hd-info">
+                                <span class="txt-light">订票日期：</span>
+                                <span class="dingqiaoDate" data-date="">2019-04-21</span>
+                            </div>
+                            <div class="order-hd-info">
+                                <span class="txt-light">订单号：</span>
+                                E695369829
+                            </div>
+                        </div>
+                        <div class="order-item-bd" style="display: block;">
+                            <table class="order-item-table" id="##">
+                                <tbody>
+                                <tr class="has-order-num ">
+                                    <td class="td-left align-top" rowspan="1">
+                                        <div class="order-info-ticket">
+                                            <!-- <div class="order-num-one">去程</div> -->
+                                            <div class="txt-bold txt-lg">泰山-->枣庄西 K491</div>
+                                            <div>2019-04-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:55 开</div>
+                                        </div>
+                                    </td>
+                                    <td style="width: 200px;">
+                                        <div class="passenger-operation">
+                                            <div class="passenger-check data-val" > </div>
+                                            <div>刘文浩 </div>
+                                            <div>中国居民身份证</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>硬座</div>
+                                        <div>05车无座</div>
+                                    </td>
+                                    <td>
+                                        <div>成人票</div>
+                                        <div><span class="txt-price">28.5元</span></div>
+                                    </td>
+
+                                    <td>
+                                        <div class="ticket-status-name">
+                                            <div> 改签票</div>
+                                            <a href="javascript:void(0)" class="txt-primary tuipiao">退票</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-left br-none quanxuan">
+                                        <label class="check-inline">
+
+                                        </label>
+                                    </td>
+                                    <td colspan="6" class="order-operation">
+                                        <div class="btn-right">
+                                            <a href="javascript:void(0)" class="btn  orderxiangqing"
+                                               style="background-color:#ff8201;color:#fff;">订单详情</a>
+                                            <a href="javascript:void(0)" class="btn orderInsurance">购/赠/退保险</a>
+
+                                            <a href="javascript:void(0)" class="btn btn-disabled">改签</a>
+
+
+                                            <a href="javascript:void(0)" class="btn btn-disabled">变更到站</a>
+
+
+                                            <a href="javascript:void(0)" data-sequence="E695369829"
+                                               class="btn queryCatering">餐饮•特产</a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips-box mt-lg duo-tips" style="display: block;">
+                <h4 class="tips-tit">温馨提示</h4>
+                <p>1.订单信息在本网站保存期限为30日。</p>
+                <p>2.在本网站购票后，没有换取纸质车票的，可不晚于开车前30分钟在本网站办理改签、退票业务，或不晚于开车前48小时在本网站办理“变更到站”业务。</p>
+                <p>3.在本网站办理退票，只能逐次单张办理。</p>
+                <p>4. 车票改签、变更到站均只能办理一次。已经改签或变更到站的车票不再办理改签；对已改签车票、团体票暂不提供“变更到站”服务。</p>
+                <p>
+                    5.退票、改签、变更到站后，如有应退票款，按购票时所使用的在线支付工具相关规定，将在规定时间内退还至原在线支付工具账户，请及时查询。如有疑问，请致电12306人工客服查询。</p>
+                <p>6.如需取消或查看车票快递状态，请点击“快递详情”。</p>
+                <p>7.投保、退保或查看电子保单状态，请点击“我的保险”或“购/赠/退保险”。</p>
+                <p>8.未尽事宜详见《铁路旅客运输规程》等有关规定和车站公告。</p>
+            </div>
+        </div>
+    </div>
+</div><!--/contion-->
+<div class="ElasticLayer start">
+    <div class="tanceng">
+        <div class="quxiao">
+            <span>退票申请</span>
+            <span class="cancel" style="cursor: pointer">x</span>
+        </div>
+        <div class="zhuti">
+            <div class="neirong">
+                <div class="itemes">
+                    <p>您确定要退票吗？</p>
+                    <p style="font-size: 12px;">如有订餐饮或特产,请按规定到网站自行办理退订。</p>
+                </div>
+                <div class="itemes">
+                    <p>共计退款：<span>10.5元</span></p>
+                    <p>手续费用：<span>2元</span>(当前时退按照5%收取,核收计为2元)</p>
+                    <p>车票票价：<span>12.5元</span></p>
+                    <p>应退票款：<span>10.5元</span></p>
+                </div>
+                <div class="itemes">
+                    <p><span>!</span>实际核收退票及应退款将按最终交易时间计算</p>
+                    <a href="javascript:void (0);" class="cancel">取消</a>
+                    <a href="javascript:void (0);" style="background-color: #ff8100;color: #fff;">确定</a>
+                </div>
+            </div>
+            <div class="dibu">
+                1.退票按如下规则核收:票面乘车站开车时间前15天(不含)以上不收取退票费,48小时以上的按价5%计,24小时以上、不足48小时的按票价10%计,不足24小时的按票价20%计。改签或变更到站后的车票乘车日期在春运明间的,退票时一律按开车时间前不足24小时标准核收退票费。上述计算的数以5角为单位,尾数小于2.5角的含去、2.5角及以上且小于7.5角的计为5角、7.5角及以上的进为1元。退票费最低按2元计收。<br>
+                2.应退款项按银行规定时限退还至购票时所使用的网上支付工具账户,请注意查间,如有疑问请致电12306人工服查询 <br>
+                3.境旅客旅行须知详见铁路境旅客相关运输组织规则和车站公告
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-con wrapper">
+        <div class="foot-links" style="margin-right:20px;">
+            <h2 class="foot-con-tit">友情链接</h2>
+            <ul class="foot-links-list">
+                <li>
+                    <a name="g_href" data-href="http://www.china-railway.com.cn/" data-redirect="N" href="javascript:;"
+                       data-target="_blank">
+                        <img src="./img/link01.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a name="g_href" data-href="http://www.china-ric.com/" data-redirect="N" href="javascript:;"
+                       data-target="_blank">
+                        <img src="./img/link02.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a name="g_href" data-href="http://www.95306.cn/" data-redirect="N" href="javascript:;"
+                       data-target="_blank">
+                        <img src="./img/link03.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a name="g_href" data-href="http://www.cre.cn/" data-redirect="N" href="javascript:;"
+                       data-target="_blank">
+                        <img src="./img/link04.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="foot-code">
+            <li style="width: 140px;">
+                <h2 class="foot-con-tit">中国铁路官方微信</h2>
+                <div class="code-pic">
+                    <img src="./img/zgtlwb.png">
+                </div>
+            </li>
+            <li style="width: 140px;">
+                <h2 class="foot-con-tit">中国铁路官方微博</h2>
+                <div class="code-pic">
+                    <img src="./img/zgtlwx.png">
+                </div>
+            </li>
+            <li style="width: 110px;">
+                <h2 class="foot-con-tit">12306 公众号</h2>
+                <div class="code-pic">
+                    <img src="./img/public.png">
+                </div>
+            </li>
+            <li style="width: 110px;">
+                <h2 class="foot-con-tit">铁路12306</h2>
+                <div class="code-pic">
+                    <img src="./img/download.png">
+                    <div class="code-tips">官方APP下载，目前铁路未授权其他网站或APP开展类似服务内容，敬请广大用户注意。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-txt">
+        <p>
+            <span class="mr">版权所有©2008-2018</span>
+            <span class="mr">中国铁路信息科技有限责任公司</span>
+            <span>中国铁道科学研究院集团有限公司</span>
+        </p>
+        <p>
+            <span class="mr">京ICP备15003716号-3</span>
+            <span class="mr">|</span>
+            <span>京ICP证150437号</span>
+        </p>
+        <a href="#" id="gotop"></a>
+    </div>
+</div><!--/footer-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/refundTicket.js"></script>
+</body>
+</html>

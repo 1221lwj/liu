@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view_personal_information</title>
+    <link rel="stylesheet" href="./css/view_personal_information.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="a">
+        <img src="img/logo@2x.png" alt='logo' title='中国铁路12306' width='200' height='50'>
+    </a>
+    <div class="right">
+        <div class="in">
+            <input type="text" placeholder="搜索车票/餐饮/常旅客/相关规章">
+            <button class="iconfont icon-sousuo"></button>
+        </div>
+        <div class="wo">
+            <span style="color: #3B99FB; font-size: 14px">
+                我的12306
+                <img src="./img/jt.png" alt=""> |
+            </span>
+            <span>
+                您好，
+                <span>
+                    <a href="#" style="color: #3B99FB;text-decoration: none">沈学坤</a>|
+                    <a href="#" style="color: #3B99FB;text-decoration: none">退出</a>
+                </span>
+            </span>
+        </div>
+    </div>
+</header><!--/header-->
+<!--<nav>-->
+    <!--<ul>-->
+        <!--<li><a href='#'>首页</a></li>-->
+        <!--<li>-->
+            <!--<a href='#'>车票</a>-->
+            <!--<p><i class="iconfont icon-jiantou2"></i></p>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href='#'>团购服务</a>-->
+            <!--<p><i class="iconfont icon-jiantou2"></i></p>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href='#'>会员服务</a>-->
+            <!--<p><i class="iconfont icon-jiantou2"></i></p>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href='#'>站车服务</a>-->
+            <!--<p><i class="iconfont icon-jiantou2"></i></p>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href='#'>商旅服务</a>-->
+            <!--<p><i class="iconfont icon-jiantou2"></i></p>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href='#'>出行指南</a>-->
+            <!--<p><i class="iconfont icon-jiantou2"></i></p>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href='#'>信息查询</a>-->
+            <!--<p><i class="iconfont icon-jiantou2"></i></p>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</nav>&lt;!&ndash;/nav&ndash;&gt;-->
+
+<div class="nav-box">
+    <ul class="nav">
+        <li id="J-index" class="nav-item nav-item-w1">
+            <a name="g_href" data-type="1" data-href="index.html" data-redirect="Y" href="javascript:;" class="nav-hd">首页</a>
+        </li>
+        <li id="J-chepiao" class="nav-item nav-item-w1 active">
+            <a href="javascript:void(0)" class="nav-hd">车票
+                <i class="icon icon-down"></i>
+            </a>
+            <div class="nav-bd">
+                <div class="nav-bd-item nav-col2">
+                    <h3 class="nav-tit">购买</h3>
+                    <ul class="nav-con">
+                        <li class="nav_dan">
+                            <a name="g_href" data-type="2" data-href="leftTicket/init?linktypeid=dc" data-redirect="Y" href="javascript:;">单程</a>
+                        </li>
+                        <li class="nav_wang">
+                            <a name="g_href" data-type="2" data-href="leftTicket/init?linktypeid=wf" data-redirect="Y" href="javascript:;">往返</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="lcQuery/init" data-redirect="Y" href="javascript:;">接续换乘</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item nav-col2">
+                    <h3 class="nav-tit">变更</h3>
+                    <ul class="nav-con">
+                        <li class="nav_ref">
+                            <a name="g_href" data-type="2" data-href="view/train_order.html?type=2&amp;typefilt=4" data-redirect="Y" href="javascript:;">退票</a>
+                        </li>
+                        <li class="nav_res">
+                            <a name="g_href" data-type="2" data-href="view/train_order.html?type=2&amp;typefilt=2" data-redirect="Y" href="javascript:;">改签</a>
+                        </li>
+                        <li class="nav_chg">
+                            <a name="g_href" data-type="2" data-href="view/train_order.html?type=2&amp;typefilt=3" data-redirect="Y" href="javascript:;">变更到站</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item nav-col2">
+                    <h3 class="nav-tit border-none">更多</h3>
+                    <ul class="nav-con">
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/ticket/zt_card.html" data-redirect="Y" href="javascript:;">中铁银通卡</a>
+                        </li>
+                        <li class="border-none">
+                            <a name="g_href" data-type="1" data-href="view/ticket/through_train.html" data-redirect="Y" href="javascript:;">广九直通车</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/ticket/railway.html" data-redirect="Y" href="javascript:;">市郊快速铁路</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/ticket/international_train.html" data-redirect="Y" href="javascript:;">国际列车</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-tuangoufuwu" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">团购服务
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col6 ">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/group/group_management.html?type=1" data-redirect="Y" href="javascript:;">务工人员</a>
+                        </li>
+
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/group/group_management.html?type=2" data-redirect="Y" href="javascript:;">学生团体</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-huiyuanfuwu" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">会员服务
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col6">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="3" data-href="index.html" data-redirect="Y" href="javascript:;">会员管理</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="3" data-href="index.html" data-redirect="Y" href="javascript:;">积分账户</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="3" data-href="index.html" data-redirect="Y" href="javascript:;">积分兑换</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="3" data-href="index.html" data-redirect="Y" href="javascript:;">会员专享</a>
+                        </li>
+                        <li class="border-none ">
+                            <a name="g_href" data-type="3" data-href="welcome.html" data-redirect="Y" href="javascript:;">会员中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-zhanchefuwu" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">站车服务
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col4 ">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="view/icentre_qxyyInfo.html" data-redirect="Y" href="javascript:;">重点旅客预约</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/station/hand.html" data-redirect="Y" href="javascript:;">便民托运</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/station/shared_Car.html" data-redirect="Y" href="javascript:;">共享汽车</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="4" data-href="czyd_2143/" data-redirect="Y" href="javascript:;">车站引导</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="view/icentre_lostInfo.html" data-redirect="Y" href="javascript:;">遗失物品查找</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/station/train_intro.html" data-redirect="Y" href="javascript:;">动车组介绍</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/station/custom_PickUp.html" data-redirect="Y" href="javascript:;">定制接送</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="4" data-href="zcfc_2548/" data-redirect="Y" href="javascript:;">站车风采</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="nav-bd-item ">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="4" data-href="czyd_2143/" data-redirect="Y" href="javascript:;">车站引导</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="4" data-href="zcfc_2548/" data-redirect="Y" href="javascript:;">站车风采</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </li>
+        <li id="J-shanlvfuwu" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">商旅服务
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col6 ">
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="10" data-href="index.html" data-redirect="Y" href="javascript:;">餐饮•特产</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="5" data-href="" data-redirect="Y" href="javascript:;">旅游</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="view/my_insurance.html" data-redirect="Y" href="javascript:;">保险</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-chuxingzhinan" class="nav-item ">
+            <a href="javascript:void(0) " class="nav-hd ">出行指南
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col2 ">
+                    <h3 class="nav-tit ">常见问题</h3>
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/ticketType.html" data-redirect="Y" href="javascript:;">车票</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/ticketWindow.html" data-redirect="Y" href="javascript:;">购票</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/windowEndorse.html" data-redirect="Y" href="javascript:;">改签、变更到站</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/windowRefund.html" data-redirect="Y" href="javascript:;">退票</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/help.html" data-redirect="Y" href="javascript:;" class="txt-lighter">更多&gt;&gt;</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item nav-col2 ">
+                    <h3 class="nav-tit ">旅客须知</h3>
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/usersNeedToKnow.html?linktypeid=txt" data-redirect="Y" href="javascript:;">铁路电子客票</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means5" data-redirect="Y" href="javascript:;">身份核验</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/help.html" data-redirect="Y" href="javascript:;" class="txt-lighter">更多&gt;&gt;</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item nav-col2 ">
+                    <h3 class="nav-tit border-none ">相关章程</h3>
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means1" data-redirect="Y" href="javascript:;">铁路互联网售票暂行办法</a>
+                        </li>
+                        <li class="border-none ">
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means2" data-redirect="Y" href="javascript:;">铁路旅客运输规程</a>
+                        </li>
+                        <li style="text-overflow:ellipsis;white-space:nowrap;">
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means6" data-redirect="Y" href="javascript:;">铁路进站乘车禁止和限制携带品公告</a>
+                        </li>
+                        <li class="border-none " style="text-overflow:ellipsis;white-space:nowrap;">
+                            <a name="g_href" data-type="2" data-href="gonggao/saleTicketMeans.html?linktypeid=means7" data-redirect="Y" href="javascript:;">广深港高速铁路跨境旅客运输组织规则</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="gonggao/help.html" data-redirect="Y" href="javascript:;" class="txt-lighter">更多&gt;&gt;</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="J-xinxichaxun" class="nav-item last ">
+            <a href="javascript:void(0) " class="nav-hd ">信息查询
+                <i class="icon icon-down "></i>
+            </a>
+            <div class="nav-bd ">
+                <div class="nav-bd-item nav-col5 ">
+                    <h3 class="nav-tit border-none ">常用查询</h3>
+                    <ul class="nav-con ">
+                        <li>
+                            <a name="g_href" data-type="2" data-href="zwdch/init" data-redirect="Y" href="javascript:;">正晚点</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="queryTrainInfo/init" data-redirect="Y" href="javascript:;">时刻表</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="leftTicketPrice/initPublicPrice" data-redirect="Y" href="javascript:;">公布票价</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/infos/ticket_check.html" data-redirect="Y" href="javascript:;">检票口</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/infos/sale_time.html" data-redirect="Y" href="javascript:;">起售时间</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-href="https://forecast.lytq.com/pc.html" data-redirect="N" data-target="_blank" href="javascript:;">天气</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/infos/jiaotong.html" data-redirect="Y" href="javascript:;">交通查询</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="2" data-href="queryAgencySellTicket/init" data-redirect="Y" href="javascript:;">代售点</a>
+                        </li>
+                        <li>
+                            <a name="g_href" data-type="1" data-href="view/infos/service_number.html" data-redirect="Y" href="javascript:;">客服电话</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="nav-bd-item ">
+                    <ul class="nav-con nav-con-pt ">
+                        <li class="border-none">
+                            <a id="gLink" href="javascript:void(0)">最新发布</a>
+                        </li>
+                        <li class="border-none">
+                            <a name="g_href" data-type="6" data-href="queryDishonest/init" data-redirect="Y" href="javascript:;">信用信息</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="center">
+    <p>当前位置：<a href="#">个人中心</a> > <a href="#" style="color: #3B99FC;">查看个人信息</a></p>
+</div>
+<div class="contion">
+    <div class="item1">
+        <dl>
+            <dt>订单中心</dt>
+            <dd><a href="refundTicket.html">火车票订单</a></dd>
+            <dd>账号安全</dd>
+            <dd>手机核验</dd>
+        </dl>
+        <dl>
+            <dt>个人信息</dt>
+            <dd style="background-color: #3B99FC;color: #fff;">查看个人信息</dd>
+            <dd>账号安全</dd>
+            <dd>手机核验</dd>
+        </dl>
+        <dl>
+            <dt>常用信息管理</dt>
+            <dd ><a href="top_contacts.html">常用联系人</a></dd>
+            <dd >车票快递地址</dd>
+        </dl>
+    </div>
+    <div class="item2">
+        <div class="item">
+            <h4>基本信息</h4>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="right"><span class="required">*</span>用户名：</td>
+                    <td class="left">user_name</td>
+                </tr>
+                <tr>
+                    <td class="right"> <span class="required">*</span>姓名：</td>
+                    <td class="left">name</td>
+                </tr>
+                <tr>
+                    <td class="right"> <span class="required">*</span>性别：</td>
+                    <td class="left">sex</td>
+                </tr>
+                <tr>
+                    <td class="right"> <span class="required">*</span>国家/地区：</td>
+                    <td class="left">Country/region</td>
+                </tr>
+                <tr>
+                    <td class="right"><span class="required">*</span>证件类型：</td>
+                    <td class="left">Document type</td>
+                </tr>
+                <tr>
+                    <td class="right"> <span class="required">*</span>证件号码：</td>
+                    <td class="left">Identification Number</td>
+                </tr>
+                <tr>
+                    <td class="right"> <span class="required">*</span>出身日期：</td>
+                    <td class="left">Date of Birth</td>
+                </tr>
+                <tr>
+                    <td class="right"> <span class="required">*</span>核验状态：</td>
+                    <td class="left" style="color: #FF8201;">Verification status</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <div class="space">
+                <h4>联系方式</h4>
+                <button class="btn1">编辑</button>
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="right"><span class="required">*</span>手机号码：</td>
+                    <td class="left">
+                        <input class="start2" type="text" name="mobile_no" value="15588512057">
+                        <span class="data">15588512057</span>
+                        <span style="color: #FF8201;margin-left: 80px">已通过检验</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">固定电话：</td>
+                    <td class="left">
+                        <input class="start2" type="text" name="tel" value="tel">
+                        <span class="data">15588512057</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">邮箱：</td>
+                    <td class="left">
+                        <input class="start2" type="email" name="email" value="1107410514@qq.com">
+                        <span class="data">1107410514@qq.com</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">地址：</td>
+                    <td class="left">
+                        <input class="start2" type="text" name="address" value="address">
+                        <span class="data">address</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">邮编：</td>
+                    <td class="left">
+                        <input class="start2" type="text" name="zip_code" value="zip_code">
+                        <span class="data">zip_code</span>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="item">
+            <div class="space">
+                <h4>附加信息</h4>
+                <button class="btn2">编辑</button>
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="right"><span class="required">*</span>旅客类型：</td>
+                    <td class="left">
+                        <select name="passenger_type" class="select start" id="select">
+                            <option value="1">成人</option>
+                            <option value="2">儿童</option>
+                            <option value="3">学生</option>
+                            <option value="4">残疾军人、伤残人民警察</option>
+                        </select>
+                        <span class="data1">成人</span>
+                    </td>
+                </tr>
+                <tr class="change start1">
+                    <td class="right"><span class="required">*</span>学校所在省份：</td>
+                    <td class="left">
+                        <select name="province" class="select start">
+                            <option value="天津">天津</option>
+                            <option value="上海">上海</option>
+                            <option value="宁波">宁波</option>
+                            <option value="北京">北京</option>
+                        </select>
+                        <span class="data1">天津</span>
+                    </td>
+                </tr>
+                <tr  class="change start1">
+                    <td class="right"><span class="required">*</span>学校名称：</td>
+                    <td>
+                        <input class="start" type="text" value="school_name">
+                        <span class="data1">school_name</span>
+                    </td>
+                </tr>
+                <tr  class="change start1">
+                    <td class="right"><span class="required">*</span>院系：</td>
+                    <td>
+                        <input class="start" type="text" value="department">
+                        <span class="data1">department</span>
+                    </td>
+                </tr>
+                <tr class="change start1">
+                    <td class="right"><span class="required">*</span>班级：</td>
+                    <td>
+                        <input class="start" type="text" value="school_class">
+                        <span class="data1">school_class</span>
+                    </td>
+                </tr>
+                <tr class="change start1">
+                    <td class="right"><span class="required">*</span>学号：</td>
+                    <td>
+                        <input class="start" type="text" value="student_no">
+                        <span class="data1">student_no</span>
+                    </td>
+                </tr>
+                <tr class="change start1">
+                    <td class="right"><span class="required">*</span>学制：</td>
+                    <td>
+                        <input class="start" type="text" value="school_system">
+                        <span class="data1">school_system</span>
+                    </td>
+                </tr>
+                <tr class="change start1">
+                    <td class="right"><span class="required">*</span>入学年份：</td>
+                    <td>
+                        <input class="start" type="text" value="enter_year">
+                        <span class="data1">enter_year</span>
+                        <span style="color: #FF8201;margin-left: 50px">不可为空呦！</span>
+                    </td>
+                </tr>
+                <tr class="change start1">
+                    <td class="right"><span class="required">*</span>优惠卡号：</td>
+                    <td>
+                        <input class="start" type="text" value="preference_card_no">
+                        <span class="data1">preference_card_no</span>
+                    </td>
+                </tr>
+                <tr class="change start1">
+                    <td class="right"><span class="required">*</span>优惠区间：</td>
+                    <td>
+                        <input class="start input"  type="text" name="preference_from_station_code" placeholder="始发地" style="width: 50px;text-align: center">
+                        <span class="data1">from</span>
+                        至
+                        <input class="start input" type="text" name="preference_to_station_code" placeholder="终点" style="width: 50px;text-align: center">
+                        <span class="data1">to</span>
+                        <span style="color: #FF8201;margin-left:50px">不可为空呦！</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-con wrapper">
+        <div class="foot-links" style="margin-right:20px;">
+            <h2 class="foot-con-tit">友情链接</h2>
+            <ul class="foot-links-list">
+                <li>
+                    <a name="g_href" data-href="http://www.china-railway.com.cn/" data-redirect="N" href="javascript:;" data-target="_blank">
+                        <img src="./img/link01.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a name="g_href" data-href="http://www.china-ric.com/" data-redirect="N" href="javascript:;" data-target="_blank">
+                        <img src="./img/link02.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a name="g_href" data-href="http://www.95306.cn/" data-redirect="N" href="javascript:;" data-target="_blank">
+                        <img src="./img/link03.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a name="g_href" data-href="http://www.cre.cn/" data-redirect="N" href="javascript:;" data-target="_blank">
+                        <img src="./img/link04.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="foot-code">
+            <li style="width: 140px;">
+                <h2 class="foot-con-tit">中国铁路官方微信</h2>
+                <div class="code-pic">
+                    <img src="./img/zgtlwb.png">
+                </div>
+            </li>
+            <li style="width: 140px;">
+                <h2 class="foot-con-tit">中国铁路官方微博</h2>
+                <div class="code-pic">
+                    <img src="./img/zgtlwx.png">
+                </div>
+            </li>
+            <li style="width: 110px;">
+                <h2 class="foot-con-tit">12306 公众号</h2>
+                <div class="code-pic">
+                    <img src="./img/public.png">
+                </div>
+            </li>
+            <li style="width: 110px;">
+                <h2 class="foot-con-tit">铁路12306</h2>
+                <div class="code-pic">
+                    <img src="./img/download.png">
+                    <div class="code-tips">官方APP下载，目前铁路未授权其他网站或APP开展类似服务内容，敬请广大用户注意。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-txt">
+        <p>
+            <span class="mr">版权所有©2008-2018</span>
+            <span class="mr">中国铁路信息科技有限责任公司</span>
+            <span>中国铁道科学研究院集团有限公司</span>
+        </p>
+        <p>
+            <span class="mr">京ICP备15003716号-3</span>
+            <span class="mr">|</span>
+            <span>京ICP证150437号</span>
+        </p>
+        <a href="#" id="gotop"></a>
+    </div>
+</div>
+<script src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/view_personal_information.js"></script>
+</body>
+</html>
